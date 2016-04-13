@@ -15,7 +15,7 @@ var searchkitRouter = SearchkitExpress.createRouter({
 });
 
 var corsOptions = {
-  origin: 'http://api_node.datatoknowledge.it'
+  origin: 'http://es.datatoknowledge.it'
 };
 
 app.use(cors(corsOptions));
