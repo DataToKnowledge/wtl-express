@@ -1,5 +1,6 @@
 var express = require('express');
-var SearchkitExpress = require("searchkit-express");
+var SearchkitExpress = require('searchkit-express');
+var cors = require('cors');
 
 var app = express();
 
@@ -12,6 +13,12 @@ var searchkitRouter = SearchkitExpress.createRouter({
     return query;
   }
 });
+
+var corsOptions = {
+  origin: 'http://http://api_node.datatoknowledge.it'
+};
+
+app.use(cors(corsOptions));
 
 app.use("/articles-search", searchkitRouter);
 
