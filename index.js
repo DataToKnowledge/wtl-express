@@ -10,7 +10,7 @@ var searchkitRouter = SearchkitExpress.createRouter({
   maxSockets:500, // defaults to 1000
   queryProcessor: function(query, req, res){
     console.log("got query " + JSON.stringify(query))
-    console.log(req)
+    console.log(req.body)
     return query;
   }
 });
