@@ -9,7 +9,7 @@ var searchkitRouter = SearchkitExpress.createRouter({
   index:'wtl/articles',
   maxSockets:500, // defaults to 1000
   queryProcessor: function(query, req, res){
-    console.log("got query " + query)
+    console.log("got query " + JSON.stringify(query))
     return query;
   }
 });
