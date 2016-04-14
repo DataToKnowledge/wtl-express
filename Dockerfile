@@ -8,4 +8,4 @@ RUN npm install
 
 EXPOSE 9000
 
-CMD DEBUG=SearchkitExpress node index.js
+CMD DEBUG=SearchkitExpress node server.js
